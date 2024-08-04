@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+    <h1>Form tutorial</h1>
+    <form>
+        <fieldset>
+            <legend>Personal info</legend>
+        <label for="first_name">First Name</label><br>
+        <input type="text" id="first_name" placeholder="Rajat" name="first_name" required><br>
+        <label for="last_name" >Last Name</label><br>
+        <input type="text" id="last_name" placeholder="Jain" name="last_name">
+        <br>
+        <label for="email" >Email</label><br>
+        <input type="email" id="email">
+        <br>
+        <label for="number" >Number</label><br>
+        <input type="number" id="number">
+    </fieldset>
+    
+        <div>
+            <h4>Select your response</h4>
+            <label for="res1">No</label>
+            <input type="radio" name="res" id="res1" value="no">
+            <label for="res2">Yes</label>
+            <input type="radio" name="res" id="res2" value="yes">
+        </div>
+        <div>
+            <p>Which vehicle you have</p>
+            <input type="checkbox" id="vehicle1" name="vehicle" value="Bike">
+            <label for="vehicle1" >Bike</label>
+            <br>
+            <input type="checkbox" id="vehicle2" name="vehicle" value="Car">
+            <label for="vehicle2">Car</label>
+            <br>
+            <input type="checkbox" id="vehicle3" name="vehicle" value="Truck">
+            <label for="vehicle3" >Truck</label>
+            <br>
+            <select name="cars" id="cars" multiple size="3">
+                <option value="volvo">volvo</option>
+                <option value="abc">abc</option>
+                <option value="xyz">xyz</option>
+                <option value="audi" selected>audi</option>
+                <option value="my">my</option>
+            </select>
+            <br>
+            <textarea rows="10" cols="30"></textarea>
+            <input type="">
+            <br>
+            <button>Press Me</button>
+            <div>
+                <input type="reset">
+                <input type="submit">
+            </div>
+            
+        </div>
+    </form>
+</body>
+</html>
