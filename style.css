@@ -8,12 +8,12 @@ body {
 p.para-border {
     border-style: dotted none solid none;
     border-radius: 20px;
-    border-width: 3px;
+    border-width: 0.2rem;
     border-color: #0dbd0a;
     padding: 10px;
     /* border-bottom: 2px dashed rgb(27, 220, 182); */
 
-    font-size: 16px;
+    font-size: 2rem;
     text-align: justify;
     /* text-align-last: center; */
     
@@ -23,7 +23,7 @@ p.para-border {
     text-transform: capitalize;
     text-indent: 50px;
     letter-spacing: 1px;
-    line-height: 20px;
+    /* line-height: 20px; */
 }
 h1 {
     text-shadow: 2px 2px 3px rgba(255, 0, 0, 1);
