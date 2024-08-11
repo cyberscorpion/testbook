@@ -1,11 +1,22 @@
 body {
-    background-color: blue;
+    /* background-image: url("Designer.jpeg"); */
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    background-position: center;
+    background-attachment:fixed;
+}
+p.para-border {
+    border-style: dotted none solid none;
+    border-radius: 20px;
+    border-width: 3px;
+    border-color: #d424a8;
+
+    /* border-bottom: 2px dashed rgb(27, 220, 182); */
 }
 h1 {
-    color: blue
+    color: blue;
 }
 #firstText {
-    background-color:blue;
     text-align: center;
 }
 .mytext {
