@@ -9,16 +9,33 @@ p.para-border {
     border-style: dotted none solid none;
     border-radius: 20px;
     border-width: 3px;
-    border-color: #d424a8;
-
+    border-color: #0dbd0a;
+    padding: 10px;
     /* border-bottom: 2px dashed rgb(27, 220, 182); */
+
+    font-size: 16px;
+    text-align: justify;
+    /* text-align-last: center; */
+    
+    /* text-decoration: underline red 3px;
+    text-decoration-style: wavy; */
+
+    text-transform: capitalize;
+    text-indent: 50px;
+    letter-spacing: 1px;
+    line-height: 20px;
 }
 h1 {
-    color: blue;
+    text-shadow: 2px 2px 3px rgba(255, 0, 0, 1);
+    /* color: blue; */
 }
 #firstText {
     text-align: center;
 }
 .mytext {
     color: #d424a8
+}
+.main-image {
+    height: 200px;
+    border-radius: 20px;
 }
