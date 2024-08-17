@@ -1,0 +1,44 @@
+body {
+    color: white;
+    text-align: center;
+}
+.parent {
+    position: relative;
+    background-color: yellow;
+    width: 300px;
+    height: 300px;
+}
+.box1 {
+    position: absolute;
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    top: 20px;
+    left: 20px;
+    border: 3px solid black;
+}
+.box2 {
+    position: absolute;
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    top: 40px;
+    left: 60px;
+    border: 3px solid black;
+}
+.box3 {
+    position: absolute;
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    top: 60px;
+    left: 100px;
+    border: 3px solid black;
+}
+
+/* 
+1. absolute elements positions itself with relative parent 
+2. Absolution element is used to put element anywhere on the page.
+3. Relative element align itself with another relative elemet. Relative element takes space on page.
+4. Absolute element do not take space on page.
+*/

@@ -32,6 +32,16 @@ h1 {
 #firstText {
     text-align: center;
 }
+.body-text {
+    /* padding: 20px; */
+    /* padding-top: 100px;
+    padding-left: 100px; */
+    /* padding: 10px 20px 30px 40px; */
+    /* margin: 40px 30px 20px 10px; */
+    margin: 30px 40px ;
+    background-color: #0dbd0a;
+    /* border: 5px solid black; */
+}
 .mytext {
     color: #d424a8
 }
