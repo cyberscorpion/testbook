@@ -1,0 +1,25 @@
+.parent-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.box1 {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    border: 3px solid black;
+}
+
+.box2 {
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    border: 3px solid black;
+    flex-grow: 1;
+}
+.box3 {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    border: 3px solid black;
+}
