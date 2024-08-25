@@ -1,0 +1,86 @@
+.box {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}
+#el1 {
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    animation-name: myanimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+}
+@keyframes myanimation {
+    0% {
+        background-color: red;
+        left: 0;
+        top: 0;
+    }
+
+    100% {
+        background-color: yellow;
+        left: 400px;
+        top: 200px
+    }
+}
+
+#img-1 {
+    height: 200px;
+    position: absolute;
+    left: 200px;
+   
+    animation: img-animation 2s infinite alternate;
+    z-index: 2;
+    transition-duration: 1s;
+}
+
+#img-1:before {
+    content: "";
+    /* background-color: red; */
+    height: 20px;
+    width: 100%;
+    top: 110%;
+    position: absolute;
+    left: 00px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.3);
+    box-shadow: 0 0px 15px 15px rgba(0,0,0,0.3);
+}
+
+
+/* #img-1:hover {
+    background-color: red;
+} */
+
+
+@keyframes img-animation {
+    0% {
+        transform: translateY(0) scale(1) rotateY(0deg);
+        /* filter: blur(5px) */
+        /* transform: rotate(0deg); */
+    }
+    100% {
+        /* top: 300px; */
+        transform: translateY(270px) scale(1) rotateY(180deg);
+        filter: blur(0)
+        /* transform: rotate(360deg); */
+    }
+}
+
+#img-2 {
+    position: absolute;
+    height: 100px;
+    top: 430px;
+    animation: img-animation2 2s infinite alternate;
+}
+
+@keyframes img-animation2 {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 270px;
+    }
+}
