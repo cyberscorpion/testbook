@@ -7,10 +7,21 @@
 <body>
     <h1>Form tutorial</h1>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/ILORLbG6iQg?si=iECxHDggmedk_PTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+    <form id="myForm" onsubmit="return validateForm()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
     <form>
         <fieldset>
-            <legend>Personal info</legend>
+        <legend>Personal info</legend>
         <label for="first_name">First Name</label><br>
         <input type="text" id="first_name" placeholder="Rajat" name="first_name" required><br>
         <label for="last_name" >Last Name</label><br>
@@ -61,4 +72,5 @@
         </div>
     </form>
 </body>
+<script src="formScript.js"> </script>
 </html>

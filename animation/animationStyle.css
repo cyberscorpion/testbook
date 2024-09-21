@@ -1,86 +1,57 @@
-.box {
-    height: 100px;
-    width: 100px;
-    border: 2px solid black;
+.container{
+    background-color: rgb(47, 196, 79);
+    width: 700px;
+    height: 700px;
+    align-items: center;
+    border: 3px solid blue;
+    transition: 1.0;
+    display: flex;
 }
-#el1 {
+
+#img1{
+   /* width: 110px;*/
+   /* height: 110px;*/
     position: absolute;
+    align-items: center;
     z-index: 1;
     overflow: hidden;
     animation-name: myanimation;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    /* animation-direction: alternate; */
+    animation-duration: 2s;
+    animation-iteration-count: 15;
+    animation-direction: alternate;
 }
-@keyframes myanimation {
-    0% {
-        background-color: red;
-        left: 0;
-        top: 0;
-    }
-
-    100% {
-        background-color: yellow;
-        left: 400px;
-        top: 200px
-    }
-}
-
-#img-1 {
-    height: 200px;
-    position: absolute;
-    left: 200px;
-   
-    animation: img-animation 2s infinite alternate;
-    z-index: 2;
-    transition-duration: 1s;
-}
-
-#img-1:before {
-    content: "";
-    /* background-color: red; */
-    height: 20px;
-    width: 100%;
-    top: 110%;
-    position: absolute;
-    left: 00px;
-    border-radius: 50%;
-    background-color: rgba(0,0,0,0.3);
-    box-shadow: 0 0px 15px 15px rgba(0,0,0,0.3);
-}
-
-
-/* #img-1:hover {
-    background-color: red;
-} */
-
-
-@keyframes img-animation {
-    0% {
-        transform: translateY(0) scale(1) rotateY(0deg);
-        /* filter: blur(5px) */
-        /* transform: rotate(0deg); */
-    }
-    100% {
-        /* top: 300px; */
-        transform: translateY(270px) scale(1) rotateY(180deg);
-        filter: blur(0)
-        /* transform: rotate(360deg); */
-    }
-}
-
-#img-2 {
-    position: absolute;
+.hello{
+     justify-content: center;
+    border: 2px solid darkmagenta;
+    background-color: blue;
+    width: 100px;
     height: 100px;
-    top: 430px;
-    animation: img-animation2 2s infinite alternate;
+    /* transition: 04s; */
+    margin-top: 10px;
+    left: 50%;
+    position: absolute
 }
-
-@keyframes img-animation2 {
-    0% {
-        left: 0;
-    }
-    100% {
-        left: 270px;
-    }
+.hello:hover{
+    transform: scale(1.6);
 }
+.animation :hover{
+    border: 2px solid black;
+    transform: scale(1.5);
+    background-color: azure;
+}
+@keyframes myanimation{
+    25%{
+        top: 0;
+        transform: rotatez(360deg);
+    }
+    50%{
+        bottom: 150px;
+        transform: rotate(150deg);
+    }
+    75%{
+        left: 150px;
+    }
+    100%{
+        right: 110px;
+    }
+    }

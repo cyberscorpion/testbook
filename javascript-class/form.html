@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation Example</title>
+    <style>
+        .error { color: red; }
+    </style>
+</head>
+<body>
+
+<form id="myForm" onsubmit="return validateForm()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email"><br><br>
+    
+    <input type="submit" value="Submit">
+</form>
+
+<p id="errorMessages" class="error"></p>
+
+<script>
+function validateForm() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var errorMessages = document.getElementById("errorMessages");
+    var errors = [];
+
+    // Clear previous error messages
+    errorMessages.innerHTML = "";
+
+    // Validate name
+    if (name === "") {
+        errors.push("Name must be filled out");
+    }
+
+    // Validate email
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (email === "") {
+        errors.push("Email must be filled out");
+    } else if (!emailPattern.test(email)) {
+        errors.push("Invalid email format");
+    }
+
+    // Display error messages
+    if (errors.length > 0) {
+        errorMessages.innerHTML = errors.join("<br>");
+        return false;
+    }
+
+    return true;
+}
+</script>
+
+</body>
+</html>
