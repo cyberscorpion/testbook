@@ -1,0 +1,97 @@
+.heading{
+	text-align: center;
+	margin-top: -1%;
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
+}
+html{
+	height: 100%;
+}
+body{
+	background: url("https://www.ilovepdf.com/images/06.jpg");
+	height:100%;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main{
+	background: #f2f2f2;
+	align-content: center;
+	height: auto;
+	width: 80%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 3%;
+	border: 1px solid black;
+	border-radius: 20px;
+	padding:5%;
+	box-shadow: 0px 0px 5px 5px #888888;
+	box-shadow: inset 0px 0px 10px 10px rgba(77,77,77,.2);
+}
+#display{
+	background:#d4d4aa;
+	height: 70px;
+	width: 100%;
+	border:  solid #8c8c8c;
+	border-width: 1px 1px 0px 1px;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+#temp_display{
+	background: #4d4d4d;
+	height: 30px;
+	width: 100%;
+	border 1px solid black;
+	margin-bottom: 30px;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+.answer{
+	text-align: right;
+	font: 3em/2em bold serif;
+	margin-right:10px;
+}
+.temp_answer{
+	color: #cccccc;
+	text-align: right;
+	font: 1.7em/1.5em serif;
+	margin-right:15px;
+}
+.button_box{
+	margin: 5px 0px 5px 0px;
+}
+button{
+	width: 100%;
+	max-height: 50px;
+	height: 14vh;
+	border-radius: 10px;
+	box-shadow: 0px 2px ;
+	font-size:180%;
+	background-color:#404040;
+	font-family: 'Orbitron', sans-serif;
+  	color:white;
+}
+.buttonequalto{
+	height: 20vh;
+	max-height: 110px;
+}
+.signature{
+	-ms-transform: rotate(-30deg); 
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+    position: absolute;
+   	font-size: 30px;
+    float:right;
+    margin-top: 12em;
+    font-family: 'Indie Flower', cursive;
+}
+.button_ac{
+	background-color:  #cc0052;
+}
+.button_ce{
+	background-color: #cc0052;
+}
