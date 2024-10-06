@@ -1,6 +1,6 @@
-let url = "https://jsonplaceholder.typicode.com/users";
+let url1 = "https://jsonplaceholder.typicode.com/users";
 
-fetch(url)
+fetch(url1)
 .then((response) => {
     console.log(response)
     return response.json()
@@ -37,3 +37,23 @@ function renderUser(users) {
     }
     document.querySelector('#content').appendChild(list)
 }
+
+// POST example:
+let url2 = "https://jsonplaceholder.typicode.com/posts"
+let data = {
+    method: 'POST',
+    body: JSON.stringify({
+        title: 'foo',
+        body: 'Hello world',
+        userId: 1,
+    }),
+    headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+    }
+}
+fetch(url2, data)
+.then((response) => {
+    console.log(response);
+    return response.json()
+})
+.then((json) => console.log(json))
