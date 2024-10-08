@@ -61,3 +61,44 @@ const quizArray = [
         correct: "www.com.yahoo",
     },
 ];
+
+let quizContainer = document.getElementById('container');
+
+const quizDisplay = (questionCount) => {
+    let quizCards = document.querySelectorAll(".container-mid");
+    
+    quizCards[questionCount].classList.remove("hide")
+}
+
+function quizCreator(){
+    quizArray.sort(() => Math.random() - 0.5); // randomize array
+    
+    for (let i of quizArray) {
+        i.options.sort(() => Math.random() - 0.5);
+
+        let div = document.createElement('div');
+        div.classList.add("container-mid", "hide")
+
+
+        let question_DIV = document.createElement('p');
+        question_DIV.classList.add('question');
+        question_DIV.innerText = i.question;
+        div.appendChild(question_DIV);
+
+        let questionOptions =  `
+        <button class="option-div" onclick="">${i.options[0]}</button>
+        <button class="option-div" onclick="">${i.options[1]}</button>
+        <button class="option-div" onclick="">${i.options[2]}</button>
+        <button class="option-div" onclick="">${i.options[3]}</button>
+        `;
+        div.innerHTML += questionOptions
+        quizContainer.appendChild(div)
+    }
+}
+
+function initial() {
+    quizCreator()
+    quizDisplay(0)
+}
+
+initial()
